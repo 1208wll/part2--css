@@ -1,0 +1,110 @@
+body{
+    background:url("http://coding.imweb.io/img/project/blog/bg.jpg") no-repeat bottom right fixed;
+}
+.page-detail{
+    width: 650px;
+    margin-left: 50px;
+}
+.page-tt{
+    font-size: 36px;
+    line-height:2;
+    margin:30px 0;
+}
+.article h2{
+    font-size:24px;
+    line-height:2;
+    margin:20px 0;
+}
+.article h2:after{
+    content: "";
+    display:block;
+    height: 2px;
+    background:linear-gradient(to right,#188eee 110px, #ccc 111px)
+}
+.article ol li{
+    counter-reset: section; /* 重置计数器成0 */
+    counter-increment:number;/*增加计数器值*/
+}
+
+.article ol li:before{
+    font-family: monospace;
+    margin-right:10px;
+    content:"0" counter(number) "/";
+    color:#999;
+}
+.article p{
+    font-size:16px;
+    line-height: 1.8;
+    text-indent: 2em;
+    margin:10px 0;
+}
+.article img{
+    border:1px;
+    padding:5px;
+    margin-bottom:10px;
+}
+.article.ps a:hover{
+    color:blue;
+}
+.section-comment{
+    margin-top:50px;
+    border-top: 3px solid #188eee;
+    padding-top:30px;
+}
+.form--comment .f-textarea{
+    border:1px solid #dbdbdb;
+    padding:5px;
+    border-radius:5px;
+    width:100%;
+    heigth:100px;
+    resize:none;
+}
+.form--comment .f-textarea:hover{
+    color:#ccc;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+.form--comment .f-btn{
+    border:0;
+    border-radius:5px;
+    background-color: #188eee;
+    margin:10px auto;
+    color:white;
+    width:80px;
+    height:30px;
+}
+.form--comment .f-btn:hover{
+    color: #147de2;
+}
+.comment-list .comment-item{
+    background: #f5f5f5;
+    font-size:12px;
+    margin-bottom: 10px;
+    padding:10px;
+    border-radius: 5px;
+}
+.comment-list .comment-item:hover{
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+.comment-item .item-time{
+  color:#666;
+}
+.comment-item .item-user{
+    color:#188eee;
+    margin-left:10px;
+    text-decoration: none;
+}
+.comment-item .comment-bd p{
+    font-size:14px;
+    margin:30px 0;
+}
+.comment-item .comment-ft{
+    text-align: right;
+}
+.comment-item .comment-ft .ft-oper{
+    color:#188eee;
+    cursor: pointer;
+    margin-right:10px;
+}
+.comment-item .comment-ft .ft-oper:hover{
+    color:#147de2;
+}
